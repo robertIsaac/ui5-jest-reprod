@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ToolbarButtonComponent, ToolbarComponent } from '@ui5/webcomponents-ngx';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    ToolbarComponent,
+    ToolbarButtonComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
