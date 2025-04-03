@@ -10,4 +10,5 @@ export default {
     '^rxjs': '<rootDir>/node_modules/rxjs/dist/bundles/rxjs.umd.js',
   },
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  setupFiles: ['construct-style-sheets-polyfill', 'element-internals-polyfill']
 } satisfies Config;
